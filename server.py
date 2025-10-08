@@ -30,9 +30,8 @@ Tools:
     hh_get_resume: Get detailed resume information (requires OAuth)
 """
 import asyncio
-import os
 import json
-from typing import Any, Optional
+from typing import Any
 from dotenv import load_dotenv
 
 from mcp.server import Server
@@ -41,9 +40,7 @@ from mcp.types import (
     TextContent,
     ImageContent,
     EmbeddedResource,
-    LoggingLevel
 )
-from pydantic import AnyUrl
 import mcp.server.stdio
 
 from hh_client import HHClient
